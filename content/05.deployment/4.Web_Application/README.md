@@ -285,7 +285,7 @@ The huge challenge is learning how all those services works. You can take a look
 
 ### Azure
 
-[Microsoft Azure Countainer Instances](https://azure.microsoft.com/en-us/services/container-instances/) also allows you to run containers on their platform.
+[Microsoft Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) also allows you to run containers on their platform.
 
 Microsoft Azure is one of the most used Wep Application Service, like Amazon's AWS and the certifications are also highly valuable for companies.
 
