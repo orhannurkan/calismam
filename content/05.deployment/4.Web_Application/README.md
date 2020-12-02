@@ -90,9 +90,12 @@ def index():
     return "<h1>Welcome to our server !!</h1>"
 
 if __name__ == '__main__':
+    # You want to put the value of the env variable PORT if it exist (some services only open specifiques ports)
+    port = int(os.environ.get('PORT', 5000))
     # Threaded option to enable multiple instances for
     # multiple user access support
-    app.run(threaded=True, port=5000)
+    # You will also define the host to "0.0.0.0" because localhost will only be reachable from inside de server.
+    app.run(host="0.0.0.0", threaded=True, port=port)
 ```
 
 To test your application locally, let's hit the [http://127.0.0.1:5000/](http://127.0.0.1:5000/) endpoint. If everything is fine, we should be greeted with a welcome message:
@@ -285,7 +288,7 @@ The huge challenge is learning how all those services works. You can take a look
 
 ### Azure
 
-[Microsoft Azure Countainer Instances](https://azure.microsoft.com/en-us/services/container-instances/) also allows you to run containers on their platform.
+[Microsoft Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) also allows you to run containers on their platform.
 
 Microsoft Azure is one of the most used Wep Application Service, like Amazon's AWS and the certifications are also highly valuable for companies.
 
