@@ -150,3 +150,7 @@ When you would want to choose NoSQL over relational database:
 [Getting started with MongoDB](https://docs.mongodb.com/manual/tutorial/)
 
 [Python MongoDB Tutorial](https://api.mongodb.com/python/current/tutorial.html)
+
+## Next
+
+[Read the readme about ORM](./ORM.md)
