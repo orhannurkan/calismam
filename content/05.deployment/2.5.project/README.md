@@ -24,16 +24,26 @@ Here as you will work with a web dev team so you **don't want** to collect your 
 You want to get data in **json format** and to return the data in the same format.
 
 ### Input
-Your input should look something like that:
-**(This is an example, you will need to decide which params you need!)**
+Your input is:
 ```json
 {
     "data": {
-        "area": int,
-        "garden": bool,
-        "zip-code": int,
-        "address": str,
-        "pool-area": Optional[int]
+            "area": int,
+            "property-type": "APARTMENT" | "HOUSE" | "OTHERS",
+            "rooms-number": int,
+            "zip-code": int,
+            "land-area": Optional[int],
+            "garden": Optional[bool],
+            "garden-area": Optional[int],
+            "equipped-kitchen": Optional[bool],
+            "full-address": Optional[str],
+            "swimmingpool": Opional[bool],
+            "furnished": Opional[bool],
+            "open-fire": Optional[bool],
+            "terrace": Optional[bool],
+            "terrace-area": Optional[int],
+            "facades-number": Optional[int],
+            "building-state": Optional["NEW" | "GOOD" | "TO RENOVATE" | "JUST RENOVATED" | "TO REBUILD"]
     }
 }
 ```
