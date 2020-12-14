@@ -15,13 +15,11 @@ The data are playing a key role to this approach as they are to be categorized i
 The most common use cases which can be identified as classification problems are speech recognition, document recognition, image recognition, etc. It can be binary classification problem or multi-class problem as well. There are a banch of algorithms to tackled these problems , with the most commonly used ones are [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [Naive Bayes](https://scikit-learn.org/stable/modules/naive_bayes.html), [Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html), [K-Nearest-Neighbor](https://scikit-learn.org/stable/modules/neighbors.html), [Random Forests](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [Decision Trees](https://scikit-learn.org/stable/modules/tree.html) and of course [Artificial Neural Networks.](https://www.investopedia.com/terms/a/artificial-neural-networks-ann.asp) 
 
 
-
-
 Those algorithms are all useful and applicable, but how you can choose which works better each time? Here are some pros and cons for each one of them to have as a reference. 
 
 |Algorithm            |Short description                                  | Pros          | Cons       |   
 |:-------------------:|:--------------------:                             |:---------------|:------------|
-|Logistic Regression|Simple and commonly used for two-class classification. Describes and estimates the relationship between one dependent binary variable and independent variables|<ul><li>Low computational power</li><li>Easy to implement </li><li>Less scaling of features </li> <li>Provides a probability score for observations </li></ul>| <ul><li>Handle large number of categorical features isn't easy</li><li>Overfitting is very common </li><li>Can't solve non-linear problems </li> <li>Bad performance with independent variables  </li></ul>           |   
+|Logistic Regression|Simple and commonly used for two-class (binary) classification. Describes and estimates the relationship between one dependent binary variable and independent variables|<ul><li>Low computational power</li><li>Easy to implement </li><li>Less scaling of features </li> <li>Provides a probability score for observations </li></ul>| <ul><li>Handle large number of categorical features isn't easy</li><li>Overfitting is very common </li><li>Can't solve non-linear problems </li> <li>Bad performance with independent variables  </li></ul>           |   
 
 
 
@@ -73,8 +71,6 @@ Nowadays, the most used models are:
 * Logistical regression if you predict a 0 or a 1 (binary classification)
 * Random forest and XGboost are giving the best result most of the time for none binary classification.
 * The evaluation can't be done just with a percentage of accuracy. You will mainly need **Recall, Precision, F1-score, Support and confusion matrix**.
-
-
 
 
 **Enough** with the theory, let's dive into code. 
