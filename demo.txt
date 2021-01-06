@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-fdsf
-=======
-bos
->>>>>>> master
